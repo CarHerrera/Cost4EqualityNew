@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<main>
+  <h1 class="title"> Gentrification</h1>
+  {% include 'nav.html' %}
+  <div class="row">
+    <div class="col-sm-12 col-lg-6">
+      <P class="purpose">Gentrification is the process of renovating
+         and improving a house or district so that it conforms to middle-class
+         taste. Gentrification is booming all around the U.S Places all around
+          DC look completely different from how it looked 10 years ago even
+          from 3 years ago. The majority of residents or former residents can
+          not recognize certain areas because of the gentrified changes.So many
+          of the run down buildings or houses in the district started to
+          transform into new buildings including very expensive condos/apartments.
+      </p>
+    </div>
+    <div class="col-sm-12 col-lg-6">
+      <iframe class="vid" src="https://www.youtube.com/embed/l399UCql8Gk"></iframe>
+    </div>
+  </div>
+  <div class="row space">
+    <div class="col-sm-12 col-lg-4">
+      <h2 class="Subtitle">Why this is important</h2>
+      <P class="purpose">Not only do people need to take note on what's changing
+         in their community they need to evaluate if the changes are beneficial
+         to them and others in their community. Many look at gentrification in
+         a, negative way, some believe it is taking away the culture. There is
+         a debate on if gentrification plays a part in racial or economical
+         issues. There is no absolute answer since answers are based on an
+         opinion and how that person benefits from the changes in their
+         community.It is important to interview people so the users can see
+         both, the negative and positive sides of what gentrification brings.
+         For example a person who doesn't come from money whose rent is now
+         high can be a negatively impacted, while a family who kids can now
+         walk down a certain street without thinking they are automatically
+         in danger is a positive aspect. Two different stories with two
+         different outcomes, like the saying "there is two sides to every story”
+         and this website is here to reveal both.
+        </P>
+      </div>
+    <div class="col-sm-12 col-lg-4">
+        <img class="temp" src="http://slice.seriouseats.com/ColumbiaHeightsMulti.jpg">
+    </div>
+    <div class="col-sm-12 col-lg-4">
+        <h2 class="Subtitle"> Video Description </h2>
+      <p class="purpose"> This video highlights the different opinions and
+        insight of how gentrification is either beneficial or detrimental. The
+        different interviewers all come from different backgrounds and areas in
+         the district. Some benefit from the changes that happened in their
+         community while others not so much. The goal was to give every
+         participant the chance to explain and identify their feelings on the
+         topic. Many have expressed that they believe gentrification is both a
+         negative as well as positive attribute to their community. Everyone who
+          participated understood that even in situations they benefited from
+           others had to pay a cost. The video not only shines a light on the
+           beliefs and opinions of DC residents, it gives a sense of
+           understanding that not just one race or a specific minority can be
+           affected by gentrification because at the end of the day DC is the
+           place we all call home.</p>
+  </div>
+</div>
+  <div class="row">
+    <div class="col-sm-12 col-lg-12">
+      <h1>Timeline</h1>
+    </div>
+  </div>
+<div>
+  {% include 'timeline.html'%}
+</div>
+{% endblock content %}

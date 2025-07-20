@@ -1,0 +1,377 @@
+body {
+  color: black;
+  background-color: black;
+}
+
+h1 {
+  padding-top: 30px;
+  padding-left: 30px;
+  background-color: black;
+  text-align: left;
+  font-size: 300%;
+  font-family: 'Bungee Shade', cursive;
+  color: red;
+}
+
+h2 {
+  color: white;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: italic;
+  padding-left: 15px;
+}
+
+li {
+  border-right: 1px solid #bbb;
+  font-size: 20px;
+}
+
+li a {
+  display: block;
+  color: #990000;
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  font-size: 19px;
+  padding: 8px 16px;
+}
+
+p {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: black;
+  overflow: hidden;
+  padding-left: 15px;
+}
+
+div {
+  background-color: black;
+  color: black;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+li a:hover, .nav:hover {
+  background-color: black;
+}
+
+li.nav {
+  display: inline-block;
+}
+
+.title {
+  border-bottom: 10px solid white;
+  font-size: 32px;
+    @media screen and (min-width: 600px) {
+      font-size: 76px;
+    }
+}
+
+.header {
+  padding: 30px;
+  background-color: black;
+  text-align: center;
+  font-size: 150%;
+  font-family: 'Bungee Shade', cursive;
+}
+
+.main {
+  color: white;
+  z-index: -1;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 21px;
+  font-style: italic;
+}
+
+.temp {
+  float: right;
+  width: 100%;
+  margin-left: 15px;
+  margin-bottom: 3px;
+  border-color: white;
+  border-style: solid;
+  position: relative;
+  float: right;
+  width: 100%;
+}
+
+.vid {
+  float: right;
+  width: 100%;
+  position: relative;
+  height: 400px;
+  margin-left: 8px;
+}
+
+.purpose {
+  color: white;
+  z-index: -1;
+  font-size: 24px;
+  font-style: italic;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  background-color: #f1f1f1;
+  position: absolute;
+  top: 0;
+  float: right;
+}
+
+.something {
+  display: block;
+  text-decoration: none;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 9%;
+}
+
+.box {
+  font-family: 'Bungee Shade';
+  font-size: 20px;
+  padding: 10px;
+  color: black;
+  background-color: white;
+  overflow: auto;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.columns {
+  width: 33%;
+  float: left;
+  margin-top: 10%;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  margin-bottom: 10%;
+  background-color: white;
+}
+
+
+.slideshow-container {
+  max-width: 70%;
+  position: relative;
+  margin: auto;
+  margin-top: 1%;
+  background-color: black;
+}
+
+.mySlides {
+  margin: auto;
+  background-color: black;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from{
+    opacity: .4;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.timeline {
+  display:inline-block;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #a9a9a9;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: black;
+  width: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: -25%;
+}
+
+.right {
+  left: 25%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #a9a9a9;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #a9a9a9;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #a9a9a9 transparent #a9a9a9;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: #060606;
+  position: relative;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+  .right {
+    left: 0%;
+  }
+}
+
+.names {
+  font-size: 78px;
+}
+.C4E {
+  font-size: 25px;
+  @media screen and (min-width: 600px) {
+    font-size: 100px;
+  }
+
+}
+.Subtitle{
+  font-size: 30px;
+  color: red;
+  font-family: 'Bungee Shade';
+  margin: 0px;
+}
+.space{
+  padding-top: 15px;
+}

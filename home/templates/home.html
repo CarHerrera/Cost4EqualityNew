@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<main>
+{% include 'nav.html' %}
+  <div class="header">
+  <h1 class="C4E" style="text-align: center">Co$t 4 Equality</h1>
+  </div>
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="1"></div>
+     <img class="temp" src="{% static "image/Pb.jpg" %}">
+   </div>
+     <div class="mySlides fade">
+       <div class="2"></div>
+        <img class="temp" src="{% static "image/G.jpg" %}">
+      </div>
+        <div class="mySlides fade">
+          <div class="3"></div>
+           <img class="temp" src="{% static "image/NN.jpg" %}">
+         </div>
+    <div class="mySlides fade">
+        <div class="4"></div>
+         <img class="temp" src="{% static "image/PBA.jpg" %}">
+    </div>
+      <div class="mySlides fade">
+        <div class="5"></div>
+         <img class="temp" src="{% static "image/GA.jpg" %}">
+    </div>
+    <div class="mySlides fade">
+        <div class="6"></div>
+        <img class="temp" src="{% static "image/NNA.jpg" %}">
+  <a class="prev">&#10094;</a>
+  <a class="next">&#10095;</a>
+</div>
+<div style="text-align: center">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+<span class="dot" onclick="currentSlide(5)"></span>
+<span class="dot" onclick="currentSlide(6)"></span>
+</div>
+<div class="row">
+  <div class="col-lg-4 col-sm-12">
+      <h2 class="box" style="color: black">Police Brutality</h2>
+      <img class="temp" src="{% static "image/police-brutality.jpg" %}">
+  </div>
+  <div class="col-lg-4 col-sm-12">
+    <h2 class="box" style="color: black">Gentrification</h2>
+    <img class= "temp" src="https://4.bp.blogspot.com/-LEXZO97kXVg/WLOD397qXJI/AAAAAAAAAAs/N__Q6QQGLwE7BhDWQtg_g5FS7ydjee35ACLcB/s1600/gentrification.jpg">
+  </div>
+  <div class="col-lg-4 col-sm-12">
+    <h2 class="box"style="color: black">Net Neutrality</h2>
+    <img class="temp" src="https://disruptionhub.com/wp-content/uploads/2017/07/Net-Neutrality.png">
+  </div>
+</div>
+</main>
+
+{% endblock content %}

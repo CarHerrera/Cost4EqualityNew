@@ -1,0 +1,11 @@
+{% load static %}
+<div class="navbar">
+  <ul class="list">
+    <li><img class="something" src="{% static "image/C4ELogo.png" %}"></li>
+    <li style="float:right" class="nav"><a href="/PoliceBrutality/">Police Brutality</a></li>
+    <li style="float:right" class="nav"><a href="/Gentrification/">Gentrification</a></li>
+    <li style="float:right" class="nav"><a href="/NetNeutrality/">Net Neutrality</a></li>
+    <li style="float:right" class="nav"><a href="{% url 'about' %}">About</a>
+    <li style="float:right" class="nav"><a href="{% url 'home' %}">Home</a></li>
+  </ul>
+</div>
